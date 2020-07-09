@@ -1,0 +1,221 @@
+{
+	"chart": {
+  "offset": {
+    "x": 0,
+    "y": 0
+  },
+  "nodes": {
+    "458f5388-a552-4e6c-a746-f298cae08aec": {
+      "id": "458f5388-a552-4e6c-a746-f298cae08aec",
+      "position": {
+        "x": 430,
+        "y": 6.666656494140625
+      },
+      "orientation": 0,
+      "type": "input-output",
+      "ports": {
+        "portA": {
+          "id": "portA",
+          "type": "input",
+          "properties": {
+            "value": "yes"
+          },
+          "position": {
+            "x": 100.5,
+            "y": -4.5
+          }
+        },
+        "portB": {
+          "id": "portB",
+          "type": "output",
+          "properties": {
+            "value": "yes"
+          },
+          "position": {
+            "x": 100.5,
+            "y": 77.5
+          }
+        }
+      },
+      "properties": {
+        "custom": "ExcelReaderRule"
+      },
+      "size": {
+        "width": 200,
+        "height": 73
+      }
+    },
+    "1ff22824-0acb-473b-8ed4-cb4cf6bef430": {
+      "id": "1ff22824-0acb-473b-8ed4-cb4cf6bef430",
+      "position": {
+        "x": 293,
+        "y": 108.66665649414062
+      },
+      "orientation": 0,
+      "type": "input-output",
+      "ports": {
+        "portA": {
+          "id": "portA",
+          "type": "input",
+          "properties": {
+            "value": "yes"
+          },
+          "position": {
+            "x": 100.5,
+            "y": -4.5
+          }
+        },
+        "portB": {
+          "id": "portB",
+          "type": "output",
+          "properties": {
+            "value": "yes"
+          },
+          "position": {
+            "x": 100.5,
+            "y": 77.5
+          }
+        }
+      },
+      "properties": {
+        "custom": "ApplyFormulaRule"
+      },
+      "size": {
+        "width": 200,
+        "height": 73
+      }
+    }
+  },
+  "links": {
+    "49e22f56-d22f-4e20-ba96-19ac73db9639": {
+      "id": "49e22f56-d22f-4e20-ba96-19ac73db9639",
+      "from": {
+        "nodeId": "458f5388-a552-4e6c-a746-f298cae08aec",
+        "portId": "portB",
+        "nodeExtraInfo": {
+          "id": "458f5388-a552-4e6c-a746-f298cae08aec",
+          "position": {
+            "x": 430,
+            "y": 6.666656494140625
+          },
+          "orientation": 0,
+          "type": "input-output",
+          "ports": {
+            "portA": {
+              "id": "portA",
+              "type": "input",
+              "properties": {
+                "value": "yes"
+              },
+              "position": {
+                "x": 100.5,
+                "y": -4.5
+              }
+            },
+            "portB": {
+              "id": "portB",
+              "type": "output",
+              "properties": {
+                "value": "yes"
+              },
+              "position": {
+                "x": 100.5,
+                "y": 77.5
+              }
+            }
+          },
+          "properties": {
+            "custom": "ExcelReaderRule"
+          },
+          "size": {
+            "width": 200,
+            "height": 73
+          }
+        }
+      },
+      "to": {
+        "nodeId": "1ff22824-0acb-473b-8ed4-cb4cf6bef430",
+        "portId": "portA",
+        "nodeExtraInfo": {
+          "id": "1ff22824-0acb-473b-8ed4-cb4cf6bef430",
+          "position": {
+            "x": 293,
+            "y": 108.66665649414062
+          },
+          "orientation": 0,
+          "type": "input-output",
+          "ports": {
+            "portA": {
+              "id": "portA",
+              "type": "input",
+              "properties": {
+                "value": "yes"
+              },
+              "position": {
+                "x": 100.5,
+                "y": -4.5
+              }
+            },
+            "portB": {
+              "id": "portB",
+              "type": "output",
+              "properties": {
+                "value": "yes"
+              },
+              "position": {
+                "x": 100.5,
+                "y": 77.5
+              }
+            }
+          },
+          "properties": {
+            "custom": "ApplyFormulaRule"
+          },
+          "size": {
+            "width": 200,
+            "height": 73
+          }
+        }
+      }
+    }
+  },
+  "selected": {},
+  "hovered": {}
+},
+
+	"jsonData": {
+	"458f5388-a552-4e6c-a746-f298cae08aec": {
+		"RuleName": "ExcelReader",
+		"Comment": "Excel Reader Rule",
+		"InputKey": "Raw",
+		"FileDetails": [{
+				"FileName": "fff0",
+				"FilePath": "gg0",
+				"FilePattern": "Pattern0",
+				"ColumnsToInclude": [],
+				"OutputKey": "458f5388-a _fff0"
+			},
+			{
+				"FileName": "jh1",
+				"FilePath": "ghg1",
+				"FilePattern": "Pattern1",
+				"ColumnsToInclude": [],
+				"OutputKey": "458f5388-a _jh1"
+			}
+		]
+	},
+	"1ff22824-0acb-473b-8ed4-cb4cf6bef430": {
+		"RuleName": "ApplyFormulaOnDF",
+		"Comment": "This rule will execute the formulaes specified",
+		"OutputKey": "1ff22824-0 _ApplyFormula",
+		"InputKey": [
+			"458f5388-a _jh1"
+		],
+		"Configuration": [{
+			"fgf": {
+				"Expression": "rtrtrtrt"
+			}
+		}]
+	}
+}
+}
