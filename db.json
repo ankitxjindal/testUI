@@ -5,11 +5,51 @@
 			"y": 0
 		},
 		"nodes": {
-			"c0a79adc-3256-4563-98a5-00d1462277ea": {
-				"id": "c0a79adc-3256-4563-98a5-00d1462277ea",
+			"6a445c86-a67a-4bc7-a54f-05c5ab9db279": {
+				"id": "6a445c86-a67a-4bc7-a54f-05c5ab9db279",
 				"position": {
-					"x": 207,
-					"y": 252.66666793823242
+					"x": 674,
+					"y": 360.6666717529297
+				},
+				"orientation": 0,
+				"type": "input-output",
+				"ports": {
+					"portA": {
+						"id": "portA",
+						"type": "input",
+						"properties": {
+							"value": "yes"
+						},
+						"position": {
+							"x": 100.5,
+							"y": -4.5
+						}
+					},
+					"portB": {
+						"id": "portB",
+						"type": "output",
+						"properties": {
+							"value": "yes"
+						},
+						"position": {
+							"x": 100.5,
+							"y": 79.5
+						}
+					}
+				},
+				"properties": {
+					"custom": "FTPPullPush"
+				},
+				"size": {
+					"width": 200,
+					"height": 75
+				}
+			},
+			"7627514a-40d8-4317-a5c9-291ce6484cc0": {
+				"id": "7627514a-40d8-4317-a5c9-291ce6484cc0",
+				"position": {
+					"x": 324,
+					"y": 532.6666717529297
 				},
 				"orientation": 0,
 				"type": "input-output",
@@ -44,99 +84,19 @@
 					"width": 200,
 					"height": 75
 				}
-			},
-			"99847a0e-9837-4d20-92ec-e1cab1808fca": {
-				"id": "99847a0e-9837-4d20-92ec-e1cab1808fca",
-				"position": {
-					"x": 325,
-					"y": 422.6666679382324
-				},
-				"orientation": 0,
-				"type": "input-output",
-				"ports": {
-					"portA": {
-						"id": "portA",
-						"type": "input",
-						"properties": {
-							"value": "yes"
-						},
-						"position": {
-							"x": 100.5,
-							"y": -4.5
-						}
-					},
-					"portB": {
-						"id": "portB",
-						"type": "output",
-						"properties": {
-							"value": "yes"
-						},
-						"position": {
-							"x": 100.5,
-							"y": 79.5
-						}
-					}
-				},
-				"properties": {
-					"custom": "FilterRows"
-				},
-				"size": {
-					"width": 200,
-					"height": 75
-				}
-			},
-			"4731e38f-2498-4a7b-b578-7cf82e69fcd8": {
-				"id": "4731e38f-2498-4a7b-b578-7cf82e69fcd8",
-				"position": {
-					"x": 750,
-					"y": 201.66666793823242
-				},
-				"orientation": 0,
-				"type": "input-output",
-				"ports": {
-					"portA": {
-						"id": "portA",
-						"type": "input",
-						"properties": {
-							"value": "yes"
-						},
-						"position": {
-							"x": 100.5,
-							"y": -4.5
-						}
-					},
-					"portB": {
-						"id": "portB",
-						"type": "output",
-						"properties": {
-							"value": "yes"
-						},
-						"position": {
-							"x": 100.5,
-							"y": 79.5
-						}
-					}
-				},
-				"properties": {
-					"custom": "CodeExecutor"
-				},
-				"size": {
-					"width": 200,
-					"height": 75
-				}
 			}
 		},
 		"links": {
-			"52cbd415-1964-4abe-b264-f534a0b2c350": {
-				"id": "52cbd415-1964-4abe-b264-f534a0b2c350",
+			"014387f7-1293-44cb-bad7-ec5e4ff27105": {
+				"id": "014387f7-1293-44cb-bad7-ec5e4ff27105",
 				"from": {
-					"nodeId": "4731e38f-2498-4a7b-b578-7cf82e69fcd8",
+					"nodeId": "6a445c86-a67a-4bc7-a54f-05c5ab9db279",
 					"portId": "portB",
 					"nodeExtraInfo": {
-						"id": "4731e38f-2498-4a7b-b578-7cf82e69fcd8",
+						"id": "6a445c86-a67a-4bc7-a54f-05c5ab9db279",
 						"position": {
-							"x": 750,
-							"y": 201.66666793823242
+							"x": 674,
+							"y": 360.6666717529297
 						},
 						"orientation": 0,
 						"type": "input-output",
@@ -165,7 +125,7 @@
 							}
 						},
 						"properties": {
-							"custom": "CodeExecutor"
+							"custom": "FTPPullPush"
 						},
 						"size": {
 							"width": 200,
@@ -174,13 +134,13 @@
 					}
 				},
 				"to": {
-					"nodeId": "c0a79adc-3256-4563-98a5-00d1462277ea",
+					"nodeId": "7627514a-40d8-4317-a5c9-291ce6484cc0",
 					"portId": "portA",
 					"nodeExtraInfo": {
-						"id": "c0a79adc-3256-4563-98a5-00d1462277ea",
+						"id": "7627514a-40d8-4317-a5c9-291ce6484cc0",
 						"position": {
-							"x": 207,
-							"y": 252.66666793823242
+							"x": 324,
+							"y": 532.6666717529297
 						},
 						"orientation": 0,
 						"type": "input-output",
@@ -210,97 +170,6 @@
 						},
 						"properties": {
 							"custom": "SortValues"
-						},
-						"size": {
-							"width": 200,
-							"height": 75
-						}
-					}
-				}
-			},
-			"72026182-d172-436a-8247-2d99ea2a945e": {
-				"id": "72026182-d172-436a-8247-2d99ea2a945e",
-				"from": {
-					"nodeId": "c0a79adc-3256-4563-98a5-00d1462277ea",
-					"portId": "portB",
-					"nodeExtraInfo": {
-						"id": "c0a79adc-3256-4563-98a5-00d1462277ea",
-						"position": {
-							"x": 207,
-							"y": 252.66666793823242
-						},
-						"orientation": 0,
-						"type": "input-output",
-						"ports": {
-							"portA": {
-								"id": "portA",
-								"type": "input",
-								"properties": {
-									"value": "yes"
-								},
-								"position": {
-									"x": 100.5,
-									"y": -4.5
-								}
-							},
-							"portB": {
-								"id": "portB",
-								"type": "output",
-								"properties": {
-									"value": "yes"
-								},
-								"position": {
-									"x": 100.5,
-									"y": 79.5
-								}
-							}
-						},
-						"properties": {
-							"custom": "SortValues"
-						},
-						"size": {
-							"width": 200,
-							"height": 75
-						}
-					}
-				},
-				"to": {
-					"nodeId": "99847a0e-9837-4d20-92ec-e1cab1808fca",
-					"portId": "portA",
-					"nodeExtraInfo": {
-						"id": "99847a0e-9837-4d20-92ec-e1cab1808fca",
-						"position": {
-							"x": 325,
-							"y": 422.6666679382324
-						},
-						"orientation": 0,
-						"type": "input-output",
-						"ports": {
-							"portA": {
-								"id": "portA",
-								"type": "input",
-								"properties": {
-									"value": "yes"
-								},
-								"position": {
-									"x": 100.5,
-									"y": -4.5
-								}
-							},
-							"portB": {
-								"id": "portB",
-								"type": "output",
-								"properties": {
-									"value": "yes"
-								},
-								"position": {
-									"x": 100.5,
-									"y": 79.5
-								}
-							}
-						},
-						"properties": {
-							"custom": "FilterRows"
 						},
 						"size": {
 							"width": 200,
@@ -314,74 +183,55 @@
 		"hovered": {}
 	},
 	"jsonData": {
-		"4731e38f-2498-4a7b-b578-7cf82e69fcd8": {
-			"RuleName": "CODE_EXECUTOR",
-			"Comment": "This rule calls the remote command through the function provided",
-			"InputKey": "",
-			"Type": "Remote",
-			"Authentication": {
-				"hostName": "10.174.134.75",
-				"userName": "asd",
-				"password": "asd"
-			},
-			"Commands": {
-				"ExecuteCommand": [{
-					"BaseCommand": "python",
-					"CodePath": "asd",
-					"FilePath": "asd",
-					"Args": [
-						"ad"
+		"6a445c86-a67a-4bc7-a54f-05c5ab9db279": {
+			"RuleName": "FTP_Push_Pull",
+			"OutputKey": "6a445c_FTPPullPush",
+			"PullFiles": {
+				"FTP_PULL": {
+					"HOSTNAME": "10.174.134.75",
+					"PORT": "12",
+					"USERNAME": "ankit",
+					"PASSWORD": "ankit",
+					"SOURCE_PATH": "source/source",
+					"DESTINATION_PATH": [
+						"dest/dest"
 					],
-					"KeyArgs": {},
-					"InputDataFrame": "dasd",
-					"Operation": "CodeExecutorResponse({})",
-					"RequestParams": {
-						"Operation": "CodeExecutorHeader({})",
-						"AdditionalDF": [
-							"asd"
-						]
-					}
-				}]
+					"FILE_PATTERN": [
+						"*.log",
+						"*.csv"
+					]
+				}
 			},
-			"ResponseKeys": "",
-			"OutputKey": "CODE_CONFIG"
+			"PushFiles": {
+				"FTP_PUSH": {
+					"HOSTNAME": "10.174.134.75",
+					"PORT": "14",
+					"USERNAME": "jindal",
+					"PASSWORD": "jindal",
+					"SOURCE_PATH": "source1/source1",
+					"DESTINATION_PATH": "dest1/dest1",
+					"FILE_PATTERN": [
+						"*.txt",
+						"*.csv"
+					]
+				}
+			}
 		},
-		"c0a79adc-3256-4563-98a5-00d1462277ea": {
+		"7627514a-40d8-4317-a5c9-291ce6484cc0": {
 			"RuleName": "sort_values",
-			"OutputKey": "c0a79a_SortValues",
+			"OutputKey": "762751_SortValues",
 			"InputKey": [
-				"CODE_CONFIG"
+				"6a445c_FTPPullPush"
 			],
 			"by": [
-				"col1",
-				"col2"
+				"pop",
+				"pull"
 			],
 			"axis": "1",
 			"ascending": "true",
 			"kind": "quicksort",
 			"head": "Yes",
 			"head_value": "12"
-		},
-		"99847a0e-9837-4d20-92ec-e1cab1808fca": {
-			"RuleName": "FilterRows",
-			"Type": "dataFrame",
-			"Comment": "This rule will filter data based on given criteria.",
-			"OutputKey": "99847a_FilterRows",
-			"InputKey": [
-				"c0a79a_SortValues"
-			],
-			"RemoveRowsSequentially": "True",
-			"Condition": {
-				"id": "g-Lx44Tdwygu2JBZJQgHvKt",
-				"rules": [{
-					"id": "r-IJtcMxR5xDp2JjvYkF0n1",
-					"field": "firstName",
-					"value": "ankit",
-					"operator": "="
-				}],
-				"combinator": "and",
-				"not": false
-			}
 		}
 	}
 }
