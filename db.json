@@ -5,11 +5,11 @@
 			"y": 0
 		},
 		"nodes": {
-			"7fa446a4-c4e3-453f-af81-eef7473e3aba": {
-				"id": "7fa446a4-c4e3-453f-af81-eef7473e3aba",
+			"c0a79adc-3256-4563-98a5-00d1462277ea": {
+				"id": "c0a79adc-3256-4563-98a5-00d1462277ea",
 				"position": {
-					"x": 292,
-					"y": 28.666656494140625
+					"x": 207,
+					"y": 252.66666793823242
 				},
 				"orientation": 0,
 				"type": "input-output",
@@ -38,18 +38,58 @@
 					}
 				},
 				"properties": {
-					"custom": "LogParser"
+					"custom": "SortValues"
 				},
 				"size": {
 					"width": 200,
 					"height": 75
 				}
 			},
-			"2db403dc-a1c1-40d7-8d75-a2f0a338ea68": {
-				"id": "2db403dc-a1c1-40d7-8d75-a2f0a338ea68",
+			"99847a0e-9837-4d20-92ec-e1cab1808fca": {
+				"id": "99847a0e-9837-4d20-92ec-e1cab1808fca",
 				"position": {
-					"x": 630,
-					"y": 198.66665649414062
+					"x": 325,
+					"y": 422.6666679382324
+				},
+				"orientation": 0,
+				"type": "input-output",
+				"ports": {
+					"portA": {
+						"id": "portA",
+						"type": "input",
+						"properties": {
+							"value": "yes"
+						},
+						"position": {
+							"x": 100.5,
+							"y": -4.5
+						}
+					},
+					"portB": {
+						"id": "portB",
+						"type": "output",
+						"properties": {
+							"value": "yes"
+						},
+						"position": {
+							"x": 100.5,
+							"y": 79.5
+						}
+					}
+				},
+				"properties": {
+					"custom": "FilterRows"
+				},
+				"size": {
+					"width": 200,
+					"height": 75
+				}
+			},
+			"4731e38f-2498-4a7b-b578-7cf82e69fcd8": {
+				"id": "4731e38f-2498-4a7b-b578-7cf82e69fcd8",
+				"position": {
+					"x": 750,
+					"y": 201.66666793823242
 				},
 				"orientation": 0,
 				"type": "input-output",
@@ -87,60 +127,16 @@
 			}
 		},
 		"links": {
-			"a5f15a18-0625-43f9-91a8-0dab8908a841": {
-				"id": "a5f15a18-0625-43f9-91a8-0dab8908a841",
+			"52cbd415-1964-4abe-b264-f534a0b2c350": {
+				"id": "52cbd415-1964-4abe-b264-f534a0b2c350",
 				"from": {
-					"nodeId": "7fa446a4-c4e3-453f-af81-eef7473e3aba",
+					"nodeId": "4731e38f-2498-4a7b-b578-7cf82e69fcd8",
 					"portId": "portB",
 					"nodeExtraInfo": {
-						"id": "7fa446a4-c4e3-453f-af81-eef7473e3aba",
+						"id": "4731e38f-2498-4a7b-b578-7cf82e69fcd8",
 						"position": {
-							"x": 292,
-							"y": 28.666656494140625
-						},
-						"orientation": 0,
-						"type": "input-output",
-						"ports": {
-							"portA": {
-								"id": "portA",
-								"type": "input",
-								"properties": {
-									"value": "yes"
-								},
-								"position": {
-									"x": 100.5,
-									"y": -4.5
-								}
-							},
-							"portB": {
-								"id": "portB",
-								"type": "output",
-								"properties": {
-									"value": "yes"
-								},
-								"position": {
-									"x": 100.5,
-									"y": 79.5
-								}
-							}
-						},
-						"properties": {
-							"custom": "LogParser"
-						},
-						"size": {
-							"width": 200,
-							"height": 75
-						}
-					}
-				},
-				"to": {
-					"nodeId": "2db403dc-a1c1-40d7-8d75-a2f0a338ea68",
-					"portId": "portA",
-					"nodeExtraInfo": {
-						"id": "2db403dc-a1c1-40d7-8d75-a2f0a338ea68",
-						"position": {
-							"x": 630,
-							"y": 198.66665649414062
+							"x": 750,
+							"y": 201.66666793823242
 						},
 						"orientation": 0,
 						"type": "input-output",
@@ -176,6 +172,141 @@
 							"height": 75
 						}
 					}
+				},
+				"to": {
+					"nodeId": "c0a79adc-3256-4563-98a5-00d1462277ea",
+					"portId": "portA",
+					"nodeExtraInfo": {
+						"id": "c0a79adc-3256-4563-98a5-00d1462277ea",
+						"position": {
+							"x": 207,
+							"y": 252.66666793823242
+						},
+						"orientation": 0,
+						"type": "input-output",
+						"ports": {
+							"portA": {
+								"id": "portA",
+								"type": "input",
+								"properties": {
+									"value": "yes"
+								},
+								"position": {
+									"x": 100.5,
+									"y": -4.5
+								}
+							},
+							"portB": {
+								"id": "portB",
+								"type": "output",
+								"properties": {
+									"value": "yes"
+								},
+								"position": {
+									"x": 100.5,
+									"y": 79.5
+								}
+							}
+						},
+						"properties": {
+							"custom": "SortValues"
+						},
+						"size": {
+							"width": 200,
+							"height": 75
+						}
+					}
+				}
+			},
+			"72026182-d172-436a-8247-2d99ea2a945e": {
+				"id": "72026182-d172-436a-8247-2d99ea2a945e",
+				"from": {
+					"nodeId": "c0a79adc-3256-4563-98a5-00d1462277ea",
+					"portId": "portB",
+					"nodeExtraInfo": {
+						"id": "c0a79adc-3256-4563-98a5-00d1462277ea",
+						"position": {
+							"x": 207,
+							"y": 252.66666793823242
+						},
+						"orientation": 0,
+						"type": "input-output",
+						"ports": {
+							"portA": {
+								"id": "portA",
+								"type": "input",
+								"properties": {
+									"value": "yes"
+								},
+								"position": {
+									"x": 100.5,
+									"y": -4.5
+								}
+							},
+							"portB": {
+								"id": "portB",
+								"type": "output",
+								"properties": {
+									"value": "yes"
+								},
+								"position": {
+									"x": 100.5,
+									"y": 79.5
+								}
+							}
+						},
+						"properties": {
+							"custom": "SortValues"
+						},
+						"size": {
+							"width": 200,
+							"height": 75
+						}
+					}
+				},
+				"to": {
+					"nodeId": "99847a0e-9837-4d20-92ec-e1cab1808fca",
+					"portId": "portA",
+					"nodeExtraInfo": {
+						"id": "99847a0e-9837-4d20-92ec-e1cab1808fca",
+						"position": {
+							"x": 325,
+							"y": 422.6666679382324
+						},
+						"orientation": 0,
+						"type": "input-output",
+						"ports": {
+							"portA": {
+								"id": "portA",
+								"type": "input",
+								"properties": {
+									"value": "yes"
+								},
+								"position": {
+									"x": 100.5,
+									"y": -4.5
+								}
+							},
+							"portB": {
+								"id": "portB",
+								"type": "output",
+								"properties": {
+									"value": "yes"
+								},
+								"position": {
+									"x": 100.5,
+									"y": 79.5
+								}
+							}
+						},
+						"properties": {
+							"custom": "FilterRows"
+						},
+						"size": {
+							"width": 200,
+							"height": 75
+						}
+					}
 				}
 			}
 		},
@@ -183,65 +314,26 @@
 		"hovered": {}
 	},
 	"jsonData": {
-		"7fa446a4-c4e3-453f-af81-eef7473e3aba": {
-			"RuleName": "LogParser",
-			"Comment": "To parse tables from the the txt or log files",
-			"Constraints1": "Write DataConfig below in the same order as they occur in file to parse",
-			"Constraints2": "Copy&Paste the headers of all tables involved, and if there are more variations of same header mention it as well with comma separator",
-			"Constraints3": "Regex allowed in FilePattern, 'Skip': line distance b/w data and header, 'Transpose': if Df transpose is needed for data, 'SheetNameToExport': sheetname in csv",
-			"InputKey": "Raw",
-			"FolderPath": "folder/path",
-			"FilePattern": "*.log",
-			"MakeSingleExcel": "True",
-			"OutputFileName": "output.csv",
-			"DictToReplace": {
-				" (ALLOWED)": "",
-				" (NOT_ALLOWED)": ""
-			},
-			"DataConfig": [{
-				"Header": "abc,def,ghj",
-				"Operation": "splitColumnsAndKeepOriginal({'col': ['MO'], 'afterSplit': ['int', 'string']})",
-				"SheetNameToExport": "export",
-				"Skip": "1",
-				"Transpose": "1",
-				"DataType": [
-					"string",
-					"string",
-					"string"
-				],
-				"ColumnsToFold": [
-					"a",
-					"b"
-				]
-			}]
-		},
-		"2db403dc-a1c1-40d7-8d75-a2f0a338ea68": {
+		"4731e38f-2498-4a7b-b578-7cf82e69fcd8": {
 			"RuleName": "CODE_EXECUTOR",
 			"Comment": "This rule calls the remote command through the function provided",
 			"InputKey": "",
 			"Type": "Remote",
 			"Authentication": {
 				"hostName": "10.174.134.75",
-				"userName": "abc",
-				"password": "abc@123"
+				"userName": "asd",
+				"password": "asd"
 			},
 			"Commands": {
 				"ExecuteCommand": [{
 					"BaseCommand": "python",
-					"CodePath": "codepath.py",
-					"FilePath": "file/path",
+					"CodePath": "asd",
+					"FilePath": "asd",
 					"Args": [
-						"test",
-						"$config_ftp_path"
+						"ad"
 					],
-					"KeyArgs": {
-						"--name": "$--name",
-						"--sirname": "$input_file_type",
-						"--inputpath": "$--outputpath",
-						"--projectname": "$projectName",
-						"--token": "$token"
-					},
-					"InputDataFrame": "inputdf",
+					"KeyArgs": {},
+					"InputDataFrame": "dasd",
 					"Operation": "CodeExecutorResponse({})",
 					"RequestParams": {
 						"Operation": "CodeExecutorHeader({})",
@@ -253,6 +345,43 @@
 			},
 			"ResponseKeys": "",
 			"OutputKey": "CODE_CONFIG"
+		},
+		"c0a79adc-3256-4563-98a5-00d1462277ea": {
+			"RuleName": "sort_values",
+			"OutputKey": "c0a79a_SortValues",
+			"InputKey": [
+				"CODE_CONFIG"
+			],
+			"by": [
+				"col1",
+				"col2"
+			],
+			"axis": "1",
+			"ascending": "true",
+			"kind": "quicksort",
+			"head": "Yes",
+			"head_value": "12"
+		},
+		"99847a0e-9837-4d20-92ec-e1cab1808fca": {
+			"RuleName": "FilterRows",
+			"Type": "dataFrame",
+			"Comment": "This rule will filter data based on given criteria.",
+			"OutputKey": "99847a_FilterRows",
+			"InputKey": [
+				"c0a79a_SortValues"
+			],
+			"RemoveRowsSequentially": "True",
+			"Condition": {
+				"id": "g-Lx44Tdwygu2JBZJQgHvKt",
+				"rules": [{
+					"id": "r-IJtcMxR5xDp2JjvYkF0n1",
+					"field": "firstName",
+					"value": "ankit",
+					"operator": "="
+				}],
+				"combinator": "and",
+				"not": false
+			}
 		}
 	}
 }
