@@ -1,221 +1,258 @@
 {
 	"chart": {
-  "offset": {
-    "x": 0,
-    "y": 0
-  },
-  "nodes": {
-    "458f5388-a552-4e6c-a746-f298cae08aec": {
-      "id": "458f5388-a552-4e6c-a746-f298cae08aec",
-      "position": {
-        "x": 430,
-        "y": 6.666656494140625
-      },
-      "orientation": 0,
-      "type": "input-output",
-      "ports": {
-        "portA": {
-          "id": "portA",
-          "type": "input",
-          "properties": {
-            "value": "yes"
-          },
-          "position": {
-            "x": 100.5,
-            "y": -4.5
-          }
-        },
-        "portB": {
-          "id": "portB",
-          "type": "output",
-          "properties": {
-            "value": "yes"
-          },
-          "position": {
-            "x": 100.5,
-            "y": 77.5
-          }
-        }
-      },
-      "properties": {
-        "custom": "ExcelReaderRule"
-      },
-      "size": {
-        "width": 200,
-        "height": 73
-      }
-    },
-    "1ff22824-0acb-473b-8ed4-cb4cf6bef430": {
-      "id": "1ff22824-0acb-473b-8ed4-cb4cf6bef430",
-      "position": {
-        "x": 293,
-        "y": 108.66665649414062
-      },
-      "orientation": 0,
-      "type": "input-output",
-      "ports": {
-        "portA": {
-          "id": "portA",
-          "type": "input",
-          "properties": {
-            "value": "yes"
-          },
-          "position": {
-            "x": 100.5,
-            "y": -4.5
-          }
-        },
-        "portB": {
-          "id": "portB",
-          "type": "output",
-          "properties": {
-            "value": "yes"
-          },
-          "position": {
-            "x": 100.5,
-            "y": 77.5
-          }
-        }
-      },
-      "properties": {
-        "custom": "ApplyFormulaRule"
-      },
-      "size": {
-        "width": 200,
-        "height": 73
-      }
-    }
-  },
-  "links": {
-    "49e22f56-d22f-4e20-ba96-19ac73db9639": {
-      "id": "49e22f56-d22f-4e20-ba96-19ac73db9639",
-      "from": {
-        "nodeId": "458f5388-a552-4e6c-a746-f298cae08aec",
-        "portId": "portB",
-        "nodeExtraInfo": {
-          "id": "458f5388-a552-4e6c-a746-f298cae08aec",
-          "position": {
-            "x": 430,
-            "y": 6.666656494140625
-          },
-          "orientation": 0,
-          "type": "input-output",
-          "ports": {
-            "portA": {
-              "id": "portA",
-              "type": "input",
-              "properties": {
-                "value": "yes"
-              },
-              "position": {
-                "x": 100.5,
-                "y": -4.5
-              }
-            },
-            "portB": {
-              "id": "portB",
-              "type": "output",
-              "properties": {
-                "value": "yes"
-              },
-              "position": {
-                "x": 100.5,
-                "y": 77.5
-              }
-            }
-          },
-          "properties": {
-            "custom": "ExcelReaderRule"
-          },
-          "size": {
-            "width": 200,
-            "height": 73
-          }
-        }
-      },
-      "to": {
-        "nodeId": "1ff22824-0acb-473b-8ed4-cb4cf6bef430",
-        "portId": "portA",
-        "nodeExtraInfo": {
-          "id": "1ff22824-0acb-473b-8ed4-cb4cf6bef430",
-          "position": {
-            "x": 293,
-            "y": 108.66665649414062
-          },
-          "orientation": 0,
-          "type": "input-output",
-          "ports": {
-            "portA": {
-              "id": "portA",
-              "type": "input",
-              "properties": {
-                "value": "yes"
-              },
-              "position": {
-                "x": 100.5,
-                "y": -4.5
-              }
-            },
-            "portB": {
-              "id": "portB",
-              "type": "output",
-              "properties": {
-                "value": "yes"
-              },
-              "position": {
-                "x": 100.5,
-                "y": 77.5
-              }
-            }
-          },
-          "properties": {
-            "custom": "ApplyFormulaRule"
-          },
-          "size": {
-            "width": 200,
-            "height": 73
-          }
-        }
-      }
-    }
-  },
-  "selected": {},
-  "hovered": {}
-},
-
-	"jsonData": {
-	"458f5388-a552-4e6c-a746-f298cae08aec": {
-		"RuleName": "ExcelReader",
-		"Comment": "Excel Reader Rule",
-		"InputKey": "Raw",
-		"FileDetails": [{
-				"FileName": "fff0",
-				"FilePath": "gg0",
-				"FilePattern": "Pattern0",
-				"ColumnsToInclude": [],
-				"OutputKey": "458f5388-a _fff0"
+		"offset": {
+			"x": 0,
+			"y": 0
+		},
+		"nodes": {
+			"7fa446a4-c4e3-453f-af81-eef7473e3aba": {
+				"id": "7fa446a4-c4e3-453f-af81-eef7473e3aba",
+				"position": {
+					"x": 292,
+					"y": 28.666656494140625
+				},
+				"orientation": 0,
+				"type": "input-output",
+				"ports": {
+					"portA": {
+						"id": "portA",
+						"type": "input",
+						"properties": {
+							"value": "yes"
+						},
+						"position": {
+							"x": 100.5,
+							"y": -4.5
+						}
+					},
+					"portB": {
+						"id": "portB",
+						"type": "output",
+						"properties": {
+							"value": "yes"
+						},
+						"position": {
+							"x": 100.5,
+							"y": 79.5
+						}
+					}
+				},
+				"properties": {
+					"custom": "LogParser"
+				},
+				"size": {
+					"width": 200,
+					"height": 75
+				}
 			},
-			{
-				"FileName": "jh1",
-				"FilePath": "ghg1",
-				"FilePattern": "Pattern1",
-				"ColumnsToInclude": [],
-				"OutputKey": "458f5388-a _jh1"
+			"2db403dc-a1c1-40d7-8d75-a2f0a338ea68": {
+				"id": "2db403dc-a1c1-40d7-8d75-a2f0a338ea68",
+				"position": {
+					"x": 630,
+					"y": 198.66665649414062
+				},
+				"orientation": 0,
+				"type": "input-output",
+				"ports": {
+					"portA": {
+						"id": "portA",
+						"type": "input",
+						"properties": {
+							"value": "yes"
+						},
+						"position": {
+							"x": 100.5,
+							"y": -4.5
+						}
+					},
+					"portB": {
+						"id": "portB",
+						"type": "output",
+						"properties": {
+							"value": "yes"
+						},
+						"position": {
+							"x": 100.5,
+							"y": 79.5
+						}
+					}
+				},
+				"properties": {
+					"custom": "CodeExecutor"
+				},
+				"size": {
+					"width": 200,
+					"height": 75
+				}
 			}
-		]
+		},
+		"links": {
+			"a5f15a18-0625-43f9-91a8-0dab8908a841": {
+				"id": "a5f15a18-0625-43f9-91a8-0dab8908a841",
+				"from": {
+					"nodeId": "7fa446a4-c4e3-453f-af81-eef7473e3aba",
+					"portId": "portB",
+					"nodeExtraInfo": {
+						"id": "7fa446a4-c4e3-453f-af81-eef7473e3aba",
+						"position": {
+							"x": 292,
+							"y": 28.666656494140625
+						},
+						"orientation": 0,
+						"type": "input-output",
+						"ports": {
+							"portA": {
+								"id": "portA",
+								"type": "input",
+								"properties": {
+									"value": "yes"
+								},
+								"position": {
+									"x": 100.5,
+									"y": -4.5
+								}
+							},
+							"portB": {
+								"id": "portB",
+								"type": "output",
+								"properties": {
+									"value": "yes"
+								},
+								"position": {
+									"x": 100.5,
+									"y": 79.5
+								}
+							}
+						},
+						"properties": {
+							"custom": "LogParser"
+						},
+						"size": {
+							"width": 200,
+							"height": 75
+						}
+					}
+				},
+				"to": {
+					"nodeId": "2db403dc-a1c1-40d7-8d75-a2f0a338ea68",
+					"portId": "portA",
+					"nodeExtraInfo": {
+						"id": "2db403dc-a1c1-40d7-8d75-a2f0a338ea68",
+						"position": {
+							"x": 630,
+							"y": 198.66665649414062
+						},
+						"orientation": 0,
+						"type": "input-output",
+						"ports": {
+							"portA": {
+								"id": "portA",
+								"type": "input",
+								"properties": {
+									"value": "yes"
+								},
+								"position": {
+									"x": 100.5,
+									"y": -4.5
+								}
+							},
+							"portB": {
+								"id": "portB",
+								"type": "output",
+								"properties": {
+									"value": "yes"
+								},
+								"position": {
+									"x": 100.5,
+									"y": 79.5
+								}
+							}
+						},
+						"properties": {
+							"custom": "CodeExecutor"
+						},
+						"size": {
+							"width": 200,
+							"height": 75
+						}
+					}
+				}
+			}
+		},
+		"selected": {},
+		"hovered": {}
 	},
-	"1ff22824-0acb-473b-8ed4-cb4cf6bef430": {
-		"RuleName": "ApplyFormulaOnDF",
-		"Comment": "This rule will execute the formulaes specified",
-		"OutputKey": "1ff22824-0 _ApplyFormula",
-		"InputKey": [
-			"458f5388-a _jh1"
-		],
-		"Configuration": [{
-			"fgf": {
-				"Expression": "rtrtrtrt"
-			}
-		}]
+	"jsonData": {
+		"7fa446a4-c4e3-453f-af81-eef7473e3aba": {
+			"RuleName": "LogParser",
+			"Comment": "To parse tables from the the txt or log files",
+			"Constraints1": "Write DataConfig below in the same order as they occur in file to parse",
+			"Constraints2": "Copy&Paste the headers of all tables involved, and if there are more variations of same header mention it as well with comma separator",
+			"Constraints3": "Regex allowed in FilePattern, 'Skip': line distance b/w data and header, 'Transpose': if Df transpose is needed for data, 'SheetNameToExport': sheetname in csv",
+			"InputKey": "Raw",
+			"FolderPath": "folder/path",
+			"FilePattern": "*.log",
+			"MakeSingleExcel": "True",
+			"OutputFileName": "output.csv",
+			"DictToReplace": {
+				" (ALLOWED)": "",
+				" (NOT_ALLOWED)": ""
+			},
+			"DataConfig": [{
+				"Header": "abc,def,ghj",
+				"Operation": "splitColumnsAndKeepOriginal({'col': ['MO'], 'afterSplit': ['int', 'string']})",
+				"SheetNameToExport": "export",
+				"Skip": "1",
+				"Transpose": "1",
+				"DataType": [
+					"string",
+					"string",
+					"string"
+				],
+				"ColumnsToFold": [
+					"a",
+					"b"
+				]
+			}]
+		},
+		"2db403dc-a1c1-40d7-8d75-a2f0a338ea68": {
+			"RuleName": "CODE_EXECUTOR",
+			"Comment": "This rule calls the remote command through the function provided",
+			"InputKey": "",
+			"Type": "Remote",
+			"Authentication": {
+				"hostName": "10.174.134.75",
+				"userName": "abc",
+				"password": "abc@123"
+			},
+			"Commands": {
+				"ExecuteCommand": [{
+					"BaseCommand": "python",
+					"CodePath": "codepath.py",
+					"FilePath": "file/path",
+					"Args": [
+						"test",
+						"$config_ftp_path"
+					],
+					"KeyArgs": {
+						"--name": "$--name",
+						"--sirname": "$input_file_type",
+						"--inputpath": "$--outputpath",
+						"--projectname": "$projectName",
+						"--token": "$token"
+					},
+					"InputDataFrame": "inputdf",
+					"Operation": "CodeExecutorResponse({})",
+					"RequestParams": {
+						"Operation": "CodeExecutorHeader({})",
+						"AdditionalDF": [
+							"asd"
+						]
+					}
+				}]
+			},
+			"ResponseKeys": "",
+			"OutputKey": "CODE_CONFIG"
+		}
 	}
-}
 }
